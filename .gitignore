@@ -5,6 +5,8 @@
 #
 # Note: if you want to stage/commit WP core files
 # you can delete this whole section/until Configuration.
+website/wordpress
+website/themes
 /wp-admin/
 /wp-content/index.php
 /wp-content/languages
@@ -46,3 +48,8 @@ wp-config.php
 # Note: If you wish to whitelist themes,
 # uncomment the next line
 #/wp-content/themes
+website/vendor/
+
+# Defaut files
+.idea/
+composer.lock

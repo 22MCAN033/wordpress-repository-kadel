@@ -1,0 +1,53 @@
+{
+    "name": "r.kalinowski/wordpress-repository",
+    "description": "A simple Wordpress website",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Raphael Kalinowski",
+            "email": "raphael@myminicom.com"
+        }
+    ],
+    "repositories":[
+        {
+            "type":"composer",
+            "url":"https://wpackagist.org",
+            "only": [
+                "wpackagist-plugin/*",
+                "wpackagist-theme/*"
+            ]
+        }
+    ],
+    "require": {
+        "johnpbloch/wordpress": "^6.2",
+        "composer/installers": "^2.2",
+        "vlucas/phpdotenv": "^5.5",
+        "wpackagist-theme/hugo-wp":"1.0.6"
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-latest"
+    },
+    "autoload": {
+        "psr-4": {
+            "RKalinowski\\WordpressRepository\\": "website/"
+        }
+    },
+    "config": {
+        "vendor-dir": "website/vendor",
+        "allow-plugins": {
+            "composer/installers": true,
+            "johnpbloch/wordpress-core-installer": true
+        }
+    },
+    "extra": {
+        "wordpress-install-dir": "website/wordpress",
+        "installer-paths": {
+            "website/themes/{$name}/": [
+                "type:wordpress-theme"
+            ],
+            "wp-content/plugins/{$name}/": [
+                "type:wordpress-plugin"
+            ]
+        }
+    }
+}
