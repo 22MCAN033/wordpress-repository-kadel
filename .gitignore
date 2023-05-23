@@ -20,7 +20,7 @@ website/themes
 /xmlrpc.php
 
 # Configuration
-wp-config.php
+#wp-config.php
 
 # Example themes
 /wp-content/themes/twenty*/
@@ -52,4 +52,5 @@ website/vendor/
 
 # Defaut files
 .idea/
+.env
 composer.lock
