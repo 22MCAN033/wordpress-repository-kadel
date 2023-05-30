@@ -40,3 +40,13 @@ DATABASE_HOST='your-host'
 
 ### FRONTEND
 - N/A
+
+
+## MEANING OF SOME DIRECTORIES AND FILES 
+
+### WEBSITE/APP
+- W3 Super Cache: this plugin install a few files and directories:
+  - cache
+  - w3tc-config
+  - advanced-cache.php
+- Languages: directory that handle the translation of your website. It is created by Wordpress when you configure the default language of your Wordpress website.

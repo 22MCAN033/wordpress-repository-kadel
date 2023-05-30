@@ -6,6 +6,7 @@
 # Note: if you want to stage/commit WP core files
 # you can delete this whole section/until Configuration.
 wordpress-core/
+website/app/plugins/
 
 # Configuration
 #wp-config.php
@@ -13,11 +14,13 @@ wordpress-core/
 # Example themes
 # /wp-content/themes/twenty*/
 
-# Example plugin
-/wp-content/plugins/hello.php
+# W3 Total Cache plugin
+website/app/w3tc-config
+website/app/cache
+website/app/advanced-cache.php
 
 # Uploads
-website/wp-content/uploads/
+website/app/uploads/
 
 # Log files
 *.log

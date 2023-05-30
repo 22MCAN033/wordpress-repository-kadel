@@ -1,4 +1,7 @@
 <?php
+/** Enable W3 Total Cache */
+define('WP_CACHE', true); // Added by W3 Total Cache
+
 /**
  * The base configuration for WordPress
  *
@@ -100,6 +103,9 @@ define ('WP_CONTENT_DIR', __DIR__ . '/app');
 if ( ! defined( 'ABSPATH' ) ) {
     define( 'ABSPATH', __DIR__ . 'wp-config.php/');
 }
+
+/** Define a custom default theme */
+define( 'WP_DEFAULT_THEME', 'rapkalin-wp' );
 
 /* That's all, stop editing! Happy publishing. */
 
