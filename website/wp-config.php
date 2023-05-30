@@ -93,13 +93,16 @@ define( 'WP_DEBUG', false );
 
 /* Add any custom values between this line and the "stop editing" line. */
 
+/** Define a custom path for the wp-content directory and rename it to app */
+define ('WP_CONTENT_DIR', __DIR__ . '/app');
 
-/* That's all, stop editing! Happy publishing. */
-
-/** Absolute path to the WordPress directory. */
+/** Define a custom path to the config.php file */
 if ( ! defined( 'ABSPATH' ) ) {
     define( 'ABSPATH', __DIR__ . 'wp-config.php/');
 }
+
+/* That's all, stop editing! Happy publishing. */
+
 
 /** Sets up WordPress vars and included files. */
 require_once ABSPATH . 'wp-settings.php';

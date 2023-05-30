@@ -1,10 +1,15 @@
 {
-    "name": "r.kalinowski/wordpress-repository",
+    "name": "rapkalin/wordpress-repository",
     "description": "A simple Wordpress website",
     "type": "project",
+    "keywords": [
+        "wordpress"
+    ],
+    "prefer-stable": true,
+    "license": "MIT",
     "authors": [
         {
-            "name": "Raphael Kalinowski",
+            "name": "Rapkalin",
             "email": "raphael@myminicom.com"
         }
     ],
@@ -19,8 +24,8 @@
         }
     ],
     "require": {
+        "php": ">=7.3",
         "johnpbloch/wordpress": "^6.2",
-        "composer/installers": "^2.2",
         "vlucas/phpdotenv": "^5.5",
         "wpackagist-theme/hugo-wp":"1.0.6"
     },
@@ -29,7 +34,7 @@
     },
     "autoload": {
         "psr-4": {
-            "RKalinowski\\WordpressRepository\\": "website/"
+            "Rapkalin\\WordpressRepository\\": "website/"
         }
     },
     "config": {
@@ -40,12 +45,12 @@
         }
     },
     "extra": {
-        "wordpress-install-dir": "website/wordpress",
+        "wordpress-install-dir": "website/wordpress-core",
         "installer-paths": {
-            "website/themes/{$name}/": [
+            "website/app/themes/{$name}/": [
                 "type:wordpress-theme"
             ],
-            "wp-content/plugins/{$name}/": [
+            "website/app/plugins/{$name}/": [
                 "type:wordpress-plugin"
             ]
         }

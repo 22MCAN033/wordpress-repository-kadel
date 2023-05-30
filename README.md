@@ -4,26 +4,39 @@
 ![composer](https://img.shields.io/badge/composer-v2-644D31.svg?style=flat-square)
 <br>
 
-# A simple Wordpress POC to:
+## ABOUT
+A simple Wordpress Proof Of Concept (POC) to test install Wordpress with Composer and create a new theme.
+Trough this POC, we will:
+- Install via composer with a custom path (core Wordpress, Theme, Plugins)
+- Create a new custom Theme
+- Create a custom plugin
+- Make unit tests using PHP UNIT (TBC)
+- Use Github workflows and automate:
+  - Building custom frontend code (JS, CSS)
+  - Building custom backend code (PHP)
+  - Deploy on SFTP
 
-## Install via composer with a custom path
-- Installing the core Wordpress
-- Installing the theme
-- Installing the plugins
+## HOW TO INSTALL THE PROJECT
 
-## Make unit tests
-- Using PHP UNIT (TBC)
+### BACKEND
 
-## Use Github workflows and automate:
-- Building custom frontend code (JS, CSS)
-- Building custom backend code (PHP)
-- Deploy on SFTP
+1- Clone the website project from your directory:
 
-# HOW TO INSTALL THE PROJECT
+```git
+git@github.com:Rapkalin/wordpress-repository.git // dont forget the dot at the end of the line to avoid having a root of the type website/website
+```
 
-## BACKEND
-- from root directory
+2- Move to the project directory:
+- cd wordpress-directory
 - composer install 
 
-## FRONTEND
+3- Create a .env file with the following variables:
+```
+DATABASE_NAME='your-database-name'
+DATABASE_USER='your-database-username'
+DATABASE_PASSWORD='your-database-password'
+DATABASE_HOST='your-host'
+```
+
+### FRONTEND
 - N/A
