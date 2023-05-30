@@ -27,7 +27,7 @@ git@github.com:Rapkalin/wordpress-repository.git // dont forget the dot at the e
 ```
 
 2- Move to the project directory:
-- cd wordpress-directory
+- cd wordpress-repository
 - composer install 
 
 3- Create a .env file with the following variables:
