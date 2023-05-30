@@ -1,3 +1,5 @@
-Hello world
+<?php get_header() ?>
 
-<?php ?>
+Hello World
+
+<?php get_footer() ?>
