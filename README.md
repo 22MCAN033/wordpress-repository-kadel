@@ -23,7 +23,7 @@ Trough this POC, we will:
 1- Clone the website project from your directory:
 
 ```git
-git@github.com:Rapkalin/wordpress-repository.git // dont forget the dot at the end of the line to avoid having a root of the type website/website
+git clone git@github.com:Rapkalin/wordpress-repository.git
 ```
 
 2- Move to the project directory:
