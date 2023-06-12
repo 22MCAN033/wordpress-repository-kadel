@@ -18,8 +18,8 @@ website/app/plugins/
 website/app/w3tc-config
 website/app/cache
 website/app/advanced-cache.php
-themes/*
-!themes/rapkalin-wp
+website/app/themes/*
+!website/app/themes/rapkalin-wp
 
 # Uploads
 website/app/uploads/
