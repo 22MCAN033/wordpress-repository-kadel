@@ -96,9 +96,6 @@ define( 'WP_DEBUG', false );
 
 /* Add any custom values between this line and the "stop editing" line. */
 
-/** Define a custom path for the wp-content directory and rename it to app */
-define ('WP_CONTENT_DIR', __DIR__ . '/app');
-
 /** Define a custom path to the config.php file */
 if ( ! defined( 'ABSPATH' ) ) {
     define( 'ABSPATH', __DIR__ . 'wp-config.php/');
@@ -107,8 +104,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 /** Define a custom default theme */
 define( 'WP_DEFAULT_THEME', 'rapkalin-wp' );
 
-/* That's all, stop editing! Happy publishing. */
+/** Define a custom content directory */
+define ('WP_CONTENT_DIR', __DIR__ . '/app/');
+define ('WP_CONTENT_URL', $env['WP_CONTENT_URL'] . '/app/');
+define( 'WP_SITEURL',  $env['WP_SITEURL'] . 'wordpress-core/');
 
+/* That's all, stop editing! Happy publishing. */
 
 /** Sets up WordPress vars and included files. */
 require_once ABSPATH . 'wp-settings.php';

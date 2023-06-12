@@ -1,4 +1,4 @@
 <?php
 
+namespace Rapkalin\App\Themes\supports;
 
-add_theme_support('title-tag');

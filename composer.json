@@ -34,7 +34,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Rapkalin\\WordpressRepository\\": "website/"
+            "Rapkalin\\": "website/"
         }
     },
     "config": {
@@ -52,6 +52,9 @@
             ],
             "website/app/plugins/{$name}/": [
                 "type:wordpress-plugin"
+            ],
+            "website/app/mu-plugins/{$name}/": [
+                "type:wordpress-muplugin"
             ]
         }
     }
