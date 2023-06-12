@@ -6,42 +6,37 @@
 # Note: if you want to stage/commit WP core files
 # you can delete this whole section/until Configuration.
 wordpress-core/
-website/app/plugins/
+website/vendor/
 
 # Configuration
 #wp-config.php
 
-# Example themes
-# /wp-content/themes/twenty*/
-
-# W3 Total Cache plugin
-website/app/w3tc-config
-website/app/cache
-website/app/advanced-cache.php
-website/app/themes/*
-!website/app/themes/rapkalin-wp
-
 # Uploads
 website/app/uploads/
-
-# Log files
-*.log
-
-# htaccess
-/.htaccess
 
 # All plugins
 #
 # Note: If you wish to whitelist plugins,
 # uncomment the next line
 #/wp-content/plugins
+website/app/plugins/
+
+# W3 Total Cache plugin
+website/app/w3tc-config
+website/app/cache
+website/app/advanced-cache.php
 
 # All themes
 #
-# Note: If you wish to whitelist themes,
-# uncomment the next line
-#/wp-content/themes
-website/vendor/
+# Keep customs ones and ignore others
+website/app/themes/*
+!website/app/themes/rapkalin-wp
+
+# Log files
+*.log
+
+# htaccess
+/.htaccess
 
 # Defaut files
 .idea/
