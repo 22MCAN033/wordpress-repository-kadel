@@ -26,7 +26,9 @@
     "require": {
         "php": ">=8.1",
         "johnpbloch/wordpress": "^6.2",
+        "composer/installers": "^2.2",
         "vlucas/phpdotenv": "^5.5",
+        "wpackagist-theme/hugo-wp":"1.0.6",
         "wpackagist-plugin/w3-total-cache":"2.3.2"
     },
     "require-dev": {
