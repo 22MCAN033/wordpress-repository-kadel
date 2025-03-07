@@ -1,5 +1,5 @@
 <?php get_header() ?>
 
-Hello World from vaibhavSS
+Hello World from vaibhav
 
 <?php get_footer() ?>
